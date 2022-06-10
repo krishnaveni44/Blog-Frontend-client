@@ -1,0 +1,16 @@
+
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: #444;
+}
+
+.headerTitleSm{color:#fff;font-size:20px;margin-top:140px;position:absolute;text-shadow:4px 4px 0 #000;top:18%;}
+.headerTitleLg{color:#fff;font-size:100px;margin-top:150px;position:absolute;text-shadow:4px 4px 0 #000;top: 20%;}
+
+.headerImg{height:450px;object-fit:cover;width:100%;}
+.sidebar{background:#ededed;border-left:5px solid #d6d5d5;border-radius:0px;margin:0;padding:20px}
+.home{margin-top:-5px}
