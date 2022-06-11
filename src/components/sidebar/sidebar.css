@@ -14,22 +14,11 @@
   align-items: center;
 }
 
-.sidebarTitle {
-  margin: 10px;
-  padding: 5px;
-  width: 80%;
-  border-top: 1px solid #a7a4a4;
-  border-bottom: 1px solid #a7a4a4;
-  font-family: "Varela Round", sans-serif;
-  font-size: 12px;
-  color: #222;
-  font-weight: 600;
-  line-height: 20px;
-  text-align: center;
-}
-
+.sidebar .sidebarTitle{border-bottom:2px solid #a7a4a4;border-top:2px solid #a7a4a4;color:#222;font-family:"Varela Round", sans-serif;font-size:12px;font-weight:600;line-height:20px;margin:10px;padding:5px;position:relative;text-align:center;width:80%;}
+.sidebar .sidebarTitle:before{background:#fff;content:"";height:3px;left:0;position:absolute;top:0;width:100%}
+.sidebar .sidebarTitle:after{background:#fff;bottom:-1px;content:"";height:3px;left:0;position:absolute;width:100%}
 .sidebarItem > img{box-shadow:5px 5px 0px #bababa;margin-top:15px;width:236px}
-
+.link{font-size:14px;}
 .sidebarItem > p {
   padding: 30px;
 }
