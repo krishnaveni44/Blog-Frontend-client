@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./topbar.css";
+// import { HiOutlineUserGroup } from "react-icons/fa";
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://blog-app-4.herokuapp.com/images/"
+  // const PF = "https://blog-app-4.herokuapp.com/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -30,11 +31,11 @@ export default function TopBar() {
               ABOUT
             </Link>
           </li>
-          <li className="topListItem">
+          {/* <li className="topListItem">
             <Link className="link" to="/">
               CONTACT
             </Link>
-          </li>
+          </li> */}
           <li className="topListItem">
             <Link className="link" to="/write">
               WRITE
@@ -48,7 +49,11 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF+user.profilePic} alt="" />
+            {/* <HiOutlineUserGroup /> */}
+            PROFILE 
+            {/* <i className="topIcon fab fa-pinterest-square"></i> */}
+            
+            {/* <img className="topImg" src={PF+user.profilePic} alt="" /> */}
           </Link>
         ) : (
           <ul className="topList">
