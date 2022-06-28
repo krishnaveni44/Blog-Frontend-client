@@ -13,7 +13,7 @@ export default function Register() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("https://blog-app-4.herokuapp.com/auth/register", {
+      const res = await axios.post("https://blog-app-4.herokuapp.com/api/auth/register", {
         username,
         email,
         password,
